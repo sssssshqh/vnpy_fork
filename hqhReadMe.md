@@ -1,0 +1,82 @@
+[SimNow](https://www.simnow.com.cn/)
+- 账号：18650054701
+- 密码：@Hqh83515433
+- 手机：18650054701
+- 昵称：Honey
+- investorId：226463
+- brokerId：9999
+- 挂靠会员：SimNow
+- [经纪商代码以及交易行情服务器地址](https://www.simnow.com.cn/product.action)
+
+[VeighNa量化社区](https://www.vnpy.com/forum/) VeighNa Station账号密码
+- 邮箱：250901214@qq.com
+- 手机：18650054701
+- 密码：@Hqh83515433
+
+[Tushare](https://tushare.pro/)
+- 账号：18650054701
+- 密码：@Hqh83515433
+- ID: 666038
+- Token: 4dc982e7ed47ca420c5963a4b188d53f748862e0002a819cc42f37e8
+
+# 安装问题
+- python3.10.11
+```
+wget https://www.python.org/ftp/python/3.10.11/Python-3.10.11.tgz
+
+tar -zxvf Python-3.10.11.tgz
+cd Python-3.10.11
+./configure
+make && make install DESTDIR=/home/hqh/Market/Python3.10.11
+
+nano ~/.bashrc
+alias python='/home/hqh/Market/Python3.10.11/usr/local/bin/python3'
+alias python3='/home/hqh/Market/Python3.10.11/usr/local/bin/python3'
+alias pip='/home/hqh/Market/Python3.10.11/usr/local/bin/pip3'
+alias pip3='/home/hqh/Market/Python3.10.11/usr/local/bin/pip3'
+
+python -m pip install --upgrade pip
+```
+- venv
+```
+python -m venv myEnv
+source myEnv/bin/activate
+```
+- vnpy_ctp
+  ```
+  mkdir gitRepository
+  cd gitRepository
+  git clone https://github.com/vnpy/vnpy_ctp.git
+  cd vnpy_ctp
+  pip install .
+  ```
+- vnpy_rpcservice
+  ```
+  pip install vnpy_rpcservice
+  ```
+- vnpy_ctastrategy
+  ```
+  pip install vnpy_ctastrategy
+  ```
+- vnpy_ctabacktester
+  ```
+  pip install vnpy_ctabacktester
+  ```
+- vnpy_sqlite
+  ```
+  pip install vnpy_sqlite
+  git clone https://github.com/vnpy/vnpy_sqlite.git
+  cd vnpy_sqlite
+  pip install .
+  ```
+
+Pip 安装失败
+- pip install pandas --default-timeout=6000
+- pip install xxx.whl  # wheel
+- pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+- pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple
+- pip install akshare --upgrade
+- pip install akshare -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com  --upgrade
+
+# 学习
+[JoinQuant Huogo2046](https://www.joinquant.com/user/9df4817f9c39c67ea27e97be2b182d1c)
