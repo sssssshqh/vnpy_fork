@@ -80,3 +80,5 @@ Pip 安装失败
 
 # 学习
 [JoinQuant Huogo2046](https://www.joinquant.com/user/9df4817f9c39c67ea27e97be2b182d1c)
+
+# [Python 量化交易](https://www.runoob.com/python-qt/qt-tutorial.html)
