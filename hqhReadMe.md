@@ -82,3 +82,11 @@ Pip 安装失败
 [JoinQuant Huogo2046](https://www.joinquant.com/user/9df4817f9c39c67ea27e97be2b182d1c)
 
 # [Python 量化交易](https://www.runoob.com/python-qt/qt-tutorial.html)
+
+# [NumPy 教程](https://www.runoob.com/numpy/numpy-tutorial.html)
+- NumPy 数组的维数称为秩（rank），秩就是轴的数量，即数组的维度，一维数组的秩为 1，二维数组的秩为 2，以此类推。
+- 在 NumPy中，每一个线性的数组称为是一个轴（axis）
+
+# [Pandas 教程](https://www.runoob.com/pandas/pandas-tutorial.html)
+
+# [Matplotlib 教程](https://www.runoob.com/matplotlib/matplotlib-tutorial.html)
