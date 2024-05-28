@@ -1,3 +1,11 @@
+<!--
+ * @Author: Huang, Quan Hang 250901214@qq.com
+ * @Date: 2024-05-28 22:38:07
+ * @LastEditors: Huang, Quan Hang 250901214@qq.com
+ * @LastEditTime: 2024-05-28 23:30:01
+ * @FilePath: \vnpy_fork\hqhReadMe.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 [SimNow](https://www.simnow.com.cn/)
 - 账号：18650054701
 - 密码：@Hqh83515433
@@ -88,5 +96,8 @@ Pip 安装失败
 - 在 NumPy中，每一个线性的数组称为是一个轴（axis）
 
 # [Pandas 教程](https://www.runoob.com/pandas/pandas-tutorial.html)
+- [Pandas 官方教程]https://pandas.pydata.org/pandas-docs/dev/user_guide/10min.html
 
 # [Matplotlib 教程](https://www.runoob.com/matplotlib/matplotlib-tutorial.html)
+
+# [Python 量化交易](https://wizardforcel.gitbooks.io/python-quant-uqer/content/)

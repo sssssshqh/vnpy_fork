@@ -1,0 +1,29 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run_hqh",
+            "type": "shell",
+            "command": "myEnv\\Scripts\\activate && python examples\\hqh\\run.py"
+        },
+        {
+            "label": "run_server",
+            "type": "shell",
+            "command": "myEnv\\Scripts\\activate && python examples\\client_server\\run_server.py"
+        },
+        {
+            "label": "gmRun_hqh",
+            "type": "shell",
+            "command": "myEnv\\Scripts\\activate && python examples\\hqh\\gmRun.py"
+        },
+        {
+            "label": "ufRun_hqh",
+            "type": "shell",
+            "command": "myEnv\\Scripts\\activate && python examples\\hqh\\ufRun.py"
+        }
+
+
+    ]
+}
