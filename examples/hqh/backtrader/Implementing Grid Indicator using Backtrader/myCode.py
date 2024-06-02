@@ -1,0 +1,37 @@
+import backtrader as bt
+
+class GridIndicator(bt.Indicator):
+    params = (('price', 0.0), ('price_range', 0.5))
+
+    def __init__(self):
+        grid1up = self.p.price + ((self.p.price_range/2) * self.p.price / 100)
+        grid1down = self.p.price - ((self.p.price_range/2) * self.p.price / 100)
+        grid2up = grid1up + ((self.p.price_range) * self.p.price / 100)
+        grid2down = grid1down - ((self.p.price_range) * self.p.price / 100)
+        grid3up = grid2up + ((self.p.price_range) * self.p.price / 100)
+        grid3down = grid2down - ((self.p.price_range) * self.p.price / 100)
+        grid4up = grid3up + ((self.p.price_range) * self.p.price / 100)
+        grid4down = grid3down - ((self.p.price_range) * self.p.price / 100)
+        grid5up = grid4up + ((self.p.price_range) * self.p.price / 100)
+        grid5down = grid4down - ((self.p.price_range) * self.p.price / 100)
+
+        self.lines.grid1up = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid1up.plot(grid1up, color='g')
+        self.lines.grid1down = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid1down.plot(grid1down, color='r')
+        self.lines.grid2up = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid2up.plot(grid2up, color='g')
+        self.lines.grid2down = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid2down.plot(grid2down, color='r')
+        self.lines.grid3up = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid3up.plot(grid3up, color='g')
+        self.lines.grid3down = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid3down.plot(grid3down, color='r')
+        self.lines.grid4up = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid4up.plot(grid4up, color='g')
+        self.lines.grid4down = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid4down.plot(grid4down, color='r')
+        self.lines.grid5up = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid5up.plot(grid5up, color='g')
+        self.lines.grid5down = bt.LinePlotterIndicator(self, plotmaster=self.data)
+        self.lines.grid5down.plot(grid5down, color='r')
